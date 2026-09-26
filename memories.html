@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories 📸</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page">
+
+    <!-- FLOATING DECORATION -->
+
+<div class="floating-decor decor-1">🌼</div>
+<div class="floating-decor decor-2">✦</div>
+<div class="floating-decor decor-3">♡</div>
+<div class="floating-decor decor-4">🌼</div>
+
+<div class="floating-fish fish-1">🐟</div>
+<div class="floating-fish fish-2">🐟</div>
+
+    <main class="memories-page">
+
+        <p class="page-label">02 — OUR MEMORIES</p>
+
+        <h1>
+            Little Moments,<br>
+            <span>Big Memories</span> 📸
+        </h1>
+
+        <p class="page-intro">
+            Beberapa momen kecil yang mungkin sederhana,
+            tapi selalu punya tempat sendiri di ingatanku.
+        </p>
+
+
+        <!-- GALLERY -->
+
+        <div class="gallery">
+
+            <!-- FOTO 1 -->
+            <div class="memory-photo" onclick="openPhoto('images/foto1.jpg', 'Our First Memory 💛')">
+
+                <img src="images/foto1.jpg" alt="Memory 1">
+
+                <div class="photo-info">
+                    <span>01</span>
+                    <p>Our First Memory</p>
+                </div>
+
+            </div>
+
+
+            <!-- FOTO 2 -->
+            <div class="memory-photo" onclick="openPhoto('images/foto2.jpg', 'A Little Moment 🌼')">
+
+                <img src="images/foto2.jpg" alt="Memory 2">
+
+                <div class="photo-info">
+                    <span>02</span>
+                    <p>A Little Moment</p>
+                </div>
+
+            </div>
+
+
+            <!-- FOTO 3 -->
+            <div class="memory-photo" onclick="openPhoto('images/foto3.jpg', 'One Of My Favorites 🫶')">
+
+                <img src="images/foto3.jpg" alt="Memory 3">
+
+                <div class="photo-info">
+                    <span>03</span>
+                    <p>One Of My Favorites</p>
+                </div>
+
+            </div>
+
+
+            <!-- FOTO 4 -->
+            <div class="memory-photo" onclick="openPhoto('images/foto4.jpg', 'Just Us 💛')">
+
+                <img src="images/foto4.jpg" alt="Memory 4">
+
+                <div class="photo-info">
+                    <span>04</span>
+                    <p>Just Us</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PHOTO POPUP -->
+
+        <div id="photoModal" class="photo-modal">
+
+            <button class="close-modal" onclick="closePhoto()">
+                ×
+            </button>
+
+            <img id="modalImage" src="" alt="Memory">
+
+            <h2 id="modalTitle"></h2>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="page-navigation">
+
+            <a href="about.html" class="nav-button back">
+                ← About You
+            </a>
+
+            <a href="story.html" class="nav-button">
+                Our Story →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

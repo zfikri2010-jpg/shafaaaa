@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Song 🎵</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page music-page page-transition">
+
+    <!-- DECORATION -->
+
+    <div class="floating-decor decor-1">🌼</div>
+    <div class="floating-decor decor-2">✦</div>
+    <div class="floating-decor decor-3">♡</div>
+    <div class="floating-decor decor-4">🌼</div>
+
+    <div class="floating-fish fish-1">🐟</div>
+    <div class="floating-fish fish-2">🐟</div>
+
+
+    <main class="music-page-content">
+
+        <p class="page-label">04 — OUR SONG</p>
+
+        <h1>
+            A Song
+            <span>For You 🎵</span>
+        </h1>
+
+        <p class="page-intro">
+            Satu lagu kecil yang bisa mengingatkan
+            pada cerita kita.
+        </p>
+
+
+        <!-- MUSIC PLAYER -->
+
+        <div class="music-player">
+
+            <div class="vinyl-container">
+
+                <div class="vinyl" id="vinyl">
+
+                    <div class="vinyl-center">
+                        ♡
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="now-playing">
+                NOW PLAYING
+            </p>
+
+
+            <h2>
+                Our Song
+            </h2>
+
+
+            <p class="song-artist">
+                For Someone Special
+            </p>
+
+
+            <!-- AUDIO -->
+
+            <audio id="audio">
+    <source src="music/our-song.mp3" type="audio/mpeg">
+</audio>
+
+
+            <!-- PROGRESS -->
+
+            <div class="music-progress">
+
+                <span id="currentTime">
+                    0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="progress"
+                    value="0"
+                    min="0"
+                    max="100"
+                    step="0.1">
+
+                <span id="duration">
+                    0:00
+                </span>
+
+            </div>
+
+
+            <!-- PLAY -->
+
+            <button
+                class="play-button"
+                id="playButton"
+                type="button">
+
+                ▶
+
+            </button>
+
+
+            <p class="music-footer">
+                ♫ made for you ♡
+            </p>
+
+        </div>
+
+
+        <!-- NAVIGASI -->
+        <!-- DI LUAR MUSIC PLAYER -->
+
+        <div class="music-navigation">
+
+            <a
+                href="story.html"
+                class="nav-button back">
+
+                ← Our Story
+
+            </a>
+
+
+            <a
+                href="letter.html"
+                class="nav-button">
+
+                My Letter →
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
